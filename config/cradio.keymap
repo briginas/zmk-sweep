@@ -103,13 +103,13 @@
             >;
         };
 
-        left_layer {
-            display-name = "SYMBOL";
+        sym_en {
+            display-name = "Symbols";
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans             &tog 4     &trans
+&kp EXCL                &kp AT            &kp HASH      &kp DLLR      &kp PRCNT      &none          &kp AMPS              &kp ASTRK                  &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS
+&hml LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp CARET      &kp MINUS      &hmr RIGHT_ALT EQUAL  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_CONTROL RIGHT_BRACE  &hmr RIGHT_SHIFT SQT
+&kp TAB                 &none             &none         &none         &bootloader    &none          &none                 &kp LEFT_BRACKET           &kp RIGHT_BRACKET               &kp NON_US_BACKSLASH
+                                                        &none         &trans         &kp BACKSPACE  &mo 3
             >;
         };
 
@@ -120,6 +120,15 @@
 &kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bootloader
                               &trans   &kp ESC    &trans    &trans
+            >;
+        };
+
+        dev {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
@@ -136,7 +145,7 @@
         mouse {
             display-name = "MOUSE";
             bindings = <
-&tog 4  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 4
+&tog 5  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 5
 &trans  &trans    &trans     &trans     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK     &mkp MB5         &trans
                              &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK
