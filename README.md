@@ -1,6 +1,6 @@
 # k4i's split kbd
 
-ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left` / `cradio_right`, built from this repo. The keyboard name in firmware is `sweep split kbd`.
+ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left` / `cradio_right`, built from [devpew/swp](https://github.com/devpew/swp). The keyboard name in firmware is `sweep split kbd`.
 
 **Build outputs:** `cradio_left`, `cradio_right`, and `settings_reset` (Bluetooth pairing reset / clear). The left half build includes ZMK Studio (RPC over USB-UART).
 
@@ -42,8 +42,6 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 | **Symbols** | Hold **left thumb** from Base                          | Punctuation and symbols; **Tab**; **Bootloader** on the left block; thumb row includes **Backspace** and **Adjust** (right thumb → **Adjust**).    |
 | **Nav**     | Hold **right thumb** from Base                         | Numbers; arrows and navigation (with mods on the home row); **Bootloader**; **Adjust** via **left thumb** (`mo 3`).                                |
 | **Adjust**  | From **Symbols** (right thumb) or **Nav** (left thumb) | **F1–F12**; **BT_SEL 0–3** and **BT_CLR**; **OUT_BLE** / **OUT_USB** (pick output, not a single toggle); **studio_unlock**; volume and media keys. |
-
-There is **no** separate “Windows” layer, **no** mouse layer in this keymap, and **no** `&default_report` binding in the layer map (battery is still reported via ZMK’s battery settings).
 
 ## References
 
