@@ -96,7 +96,7 @@
             display-name = "base";
             bindings = <
 &kp Q              &kp W                &kp E            &kp R            &kp T        &kp Y      &kp U             &kp I             &kp O                 &kp P
-&hml A LEFT_SHIFT  &hml LEFT_CONTROL S  &hml LEFT_GUI D  &hml LEFT_ALT F  &kp G        &kp H      &hmr RIGHT_ALT J  &hmr RIGHT_GUI K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON
+&hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_GUI D  &hml LEFT_ALT F  &kp G        &kp H      &hmr RIGHT_ALT J  &hmr RIGHT_GUI K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON
 &kp Z              &kp X                &kp C            &kp V            &kp B        &kp N      &kp M             &kp COMMA         &kp DOT               &kp SLASH
                                                          &mo 1            &kp SPACE    &kp ENTER  &mo 2
             >;
