@@ -121,7 +121,7 @@
             bindings = <
 &kp EXCL                &kp AT            &kp HASH      &kp DLLR      &kp PRCNT      &none          &kp AMPS              &kp ASTRK                  &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS
 &hml LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp CARET      &kp MINUS      &hmr RIGHT_ALT EQUAL  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_CONTROL RIGHT_BRACE  &hmr RIGHT_SHIFT SQT
-&kp TAB                 &none             &none         &none         &bootloader    &none          &none                 &kp LEFT_BRACKET           &kp RIGHT_BRACKET               &kp NON_US_BACKSLASH
+&kp TAB                 &none             &none         &none         &bootloader    &none          &none                 &kp LEFT_BRACKET           &kp RIGHT_BRACKET               &kp BACKSLASH
                                                         &none         &trans         &kp BACKSPACE  &mo 3
             >;
         };
