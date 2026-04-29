@@ -121,7 +121,7 @@
 &kp EXCL                &kp AT            &kp HASH      &kp DLLR      &kp PRCNT      &none      &kp AMPS              &kp ASTRK                  &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS
 &hml LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp CARET      &kp MINUS  &hmr RIGHT_ALT EQUAL  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_CONTROL RIGHT_BRACE  &hmr RIGHT_SHIFT SQT
 &kp TAB                 &none             &none         &none         &bootloader    &none      &kp BACKSPACE         &kp LEFT_BRACKET           &kp RIGHT_BRACKET               &kp BACKSLASH
-                                                        &none         &trans         &none      &mo 3
+                                                        &none         &none          &none      &mo 3
             >;
         };
 
@@ -131,7 +131,7 @@
 &kp N1          &kp N2            &kp N3        &kp N4        &kp N5          &kp N6       &kp N7                     &kp N8                   &kp N9                    &kp N0
 &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp NUMBER_6    &kp LEFT     &hmr RIGHT_ALT DOWN_ARROW  &hmr RIGHT_GUI UP_ARROW  &hmr RIGHT_CONTROL RIGHT  &kp RIGHT_SHIFT
 &kp GRAVE       &trans            &trans        &kp DELETE    &trans          &bootloader  &none                      &none                    &none                     &none
-                                                &mo 3         &none           &trans       &none
+                                                &mo 3         &none           &none        &none
             >;
         };
 
