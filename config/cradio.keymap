@@ -100,6 +100,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <10 19>;
         };
+
+        lang {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <2 7>;
+        };
     };
 
     keymap {
