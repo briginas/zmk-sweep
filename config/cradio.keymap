@@ -44,8 +44,6 @@
 };
 
 / {
-    chosen { zmk,charmap = &charmap_us; };
-
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
