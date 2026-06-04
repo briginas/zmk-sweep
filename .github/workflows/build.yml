@@ -1,5 +1,37 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK firmware
+
+on:
+  push:
+    paths:
+      - ".github/workflows/build.yml"
+      - "build.yaml"
+      - "config/**"
+      - "zephyr/**"
+      - "boards/**"
+      - "dts/**"
+      - "include/**"
+  pull_request:
+    paths:
+      - ".github/workflows/build.yml"
+      - "build.yaml"
+      - "config/**"
+      - "zephyr/**"
+      - "boards/**"
+      - "dts/**"
+      - "include/**"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   build:
-    uses: nxtkb/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: build.yaml
+      config_path: config
+      archive_name: firmware
