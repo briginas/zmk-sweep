@@ -37,17 +37,9 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_KEYBOARD_NAME=\"sweep_split_b\"
     artifact-name: sweep_l_b
-  - board: nice_nano//zmk
-    shield: cradio_right
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"sweep_split_b\"
-    artifact-name: sweep_r_b
   # keyboard: sweep black heavy
   - board: nice_nano//zmk
     shield: cradio_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_KEYBOARD_NAME=\"sweep_split_bh\"
     artifact-name: sweep_l_bh
-  - board: nice_nano//zmk
-    shield: cradio_right
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"sweep_split_bh\"
-    artifact-name: sweep_r_bh

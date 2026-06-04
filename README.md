@@ -2,7 +2,7 @@
 
 ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left` / `cradio_right`, built from [devpew/swp](https://github.com/devpew/swp). The keyboard name in firmware is `sweep split kbd`.
 
-**Build outputs:** `sweep_l`, `sweep_r`, `sweep_l_b`, `sweep_r_b`, `sweep_l_bh`, `sweep_r_bh`, and `reset` (Bluetooth pairing reset / clear). The left half builds include ZMK Studio (RPC over USB-UART).
+**Build outputs:** `sweep_l`, `sweep_r`, `sweep_l_b`, `sweep_l_bh`, and `reset` (Bluetooth pairing reset / clear). The left half builds include ZMK Studio (RPC over USB-UART). `sweep_r` is shared by all three keyboards because the right half is the split peripheral and does not advertise as the host Bluetooth keyboard.
 
 ## Quick start
 
@@ -19,7 +19,7 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
    4. Quickly short **GND** and **RST** on the controller twice (e.g. second and third pins on the corner row—check your board’s pinout)
 6. Copy the correct file to the bootloader drive:
    - Names containing **`_l`** → left half
-   - Names containing **`_r`** → right half
+   - **`sweep_r`** → right half for any of the three keyboards
    - **`reset`** → run on a half to clear Bluetooth state when pairing is stuck (not required for normal keymap or name changes)
 
 ### Firmware behavior (config)

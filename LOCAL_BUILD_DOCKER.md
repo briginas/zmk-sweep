@@ -85,6 +85,9 @@ Output:
 ~/dev/zmk-workspace/build/sweep_r/zephyr/zmk.uf2
 ```
 
+Use this same right-half firmware for all three keyboards. Only the central
+left-half firmware needs a unique Bluetooth keyboard name.
+
 ### Settings Reset
 
 Use this firmware to clear Bluetooth settings/pairing state:
@@ -141,8 +144,7 @@ For the black heavy variant, replace the build directory and keyboard name:
 -DCONFIG_ZMK_KEYBOARD_NAME=\"sweep_split_bh\"
 ```
 
-The right-half variants are the same pattern, without `-S studio-rpc-usb-uart`
-and without `-DCONFIG_ZMK_STUDIO=y`.
+The right half uses the shared `sweep_r` build above for all named variants.
 
 ## Flashing
 
