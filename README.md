@@ -34,14 +34,22 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
 
 Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F** and **J K L ;** (Shift / Ctrl / Gui / Alt as labeled in the map).
 
-**Combos:** **Esc** and **Caps Lock**—see `combos` in `config/cradio.keymap` for key positions.
+**Combos:** **Esc**, **Caps Lock**, and **Lang** (`LG(SPACE)`)—see `combos` in `config/cradio.keymap` for key positions.
+
+<div align="center">
+
+  ![sweep-layout](assets/sweep-layout.svg)
+
+</div>
+
+*This diagram mirrors the current `config/cradio.keymap`.*
 
 | Layer       | How you get there                                      | Role                                                                                                                                               |
 | ----------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Base**    | Default                                                | QWERTY; **left thumb** = hold **Symbols**; **right thumb** = hold **Nav**; thumbs share **Space** and **Enter** between them.                      |
-| **Symbols** | Hold **left thumb** from Base                          | Punctuation and symbols; **Tab**; **Bootloader** on the left block; thumb row includes **Backspace** and **Adjust** (right thumb → **Adjust**).    |
+| **Symbols** | Hold **left thumb** from Base                          | Punctuation and symbols; **Tab**; **Bootloader** on the left block; right block includes **Backspace**; right thumb → **Adjust**.                  |
 | **Nav**     | Hold **right thumb** from Base                         | Numbers; arrows and navigation (with mods on the home row); **Bootloader**; **Adjust** via **left thumb** (`mo 3`).                                |
-| **Adjust**  | From **Symbols** (right thumb) or **Nav** (left thumb) | **F1–F12**; **BT_SEL 0–3** and **BT_CLR**; **OUT_BLE** / **OUT_USB** (pick output, not a single toggle); **studio_unlock**; volume and media keys. |
+| **Adjust**  | From **Symbols** (right thumb) or **Nav** (left thumb) | **F1–F12**; **BT_SEL 0** and **BT_CLR**; **studio_unlock**; volume and media keys.                                                                 |
 
 ## References
 
