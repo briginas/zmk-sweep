@@ -32,6 +32,8 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
 
 ## Keymap (overview)
 
+The layout is intentionally **maximally close to a full-size keyboard**: letters follow normal QWERTY, punctuation on **Symbols** mirrors typical US placement, and **Nav** puts numbers and arrows where you would expect on a standard board. Home row mods on **A S D F** / **J K L ;** are the main ergonomic adaptation; everything else stays familiar so switching from a laptop or desktop keyboard is straightforward.
+
 Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F** and **J K L ;** (Shift / Ctrl / Gui / Alt as labeled in the map).
 
 **Combos:** **Esc**, **Caps Lock**, and **Lang** (`LG(SPACE)`)—see `combos` in `config/cradio.keymap` for key positions.
@@ -42,7 +44,7 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 
 </div>
 
-*This diagram mirrors the current `config/cradio.keymap`.*
+*This diagram mirrors the current `config/cradio.keymap`. Positions are aligned with full-size keyboard conventions wherever the 34-key split layout allows.*
 
 | Layer       | How you get there                                      | Role                                                                                                                                               |
 | ----------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
