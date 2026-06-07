@@ -48,6 +48,9 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 
 </div>
 
+*This diagram was created using draw.io*
+*Click [HERE](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sweep-layout.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fbriginas%2Fzmk-sweep%2Fmain%2Fassets%2Fsweep-layout.svg) to view a copy that you can edit*
+
 *This diagram mirrors the current `config/cradio.keymap`. Positions are aligned with full-size keyboard conventions wherever the 34-key split layout allows.*
 
 | Layer       | How you get there                                      | Role                                                                                                                                               |
