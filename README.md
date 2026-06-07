@@ -4,13 +4,17 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
 
 **Build outputs:** `sweep_l`, `sweep_r`, `sweep_l_b`, `sweep_l_bh`, and `reset` (Bluetooth pairing reset / clear). The left half builds include ZMK Studio (RPC over USB-UART). `sweep_r` is shared by all three keyboards because the right half is the split peripheral and does not advertise as the host Bluetooth keyboard.
 
+The three keyboard variants share the same keymap; only the Bluetooth advertised name differs: **sweep** (default, `sweep split kbd`), **sweep black** (`sweep_split_b`, artifact `sweep_l_b`), and **sweep black heavy** (`sweep_split_bh`, artifact `sweep_l_bh`).
+
 ## Quick start
 
 ### Flash new firmware
 
+> To build locally without GitHub Actions, see [LOCAL_BUILD_DOCKER.md](LOCAL_BUILD_DOCKER.md).
+
 1. [Fork this repo](https://github.com/briginas/zmk-sweep/fork)
 2. (Optional) Edit `config/cradio.keymap` and `config/cradio.conf`.
-3. Wait for GitHub Actions to finish, then download the artifact zip and extract the UF2 (or other) files for your halves.
+3. Wait for the GitHub Actions build to finish (the **Actions** tab on your fork), then download the artifact zip from that run and extract the UF2 (or other) files for your halves.
 4. Connect the half you are flashing with a USB cable.
 5. Enter the bootloader on that half:
    1. A **bootloader** key on **Symbols** or **Nav** (see below), if you can still type
@@ -24,7 +28,7 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
 
 ### Firmware behavior (config)
 
-- Bluetooth: up to five paired connections (`CONFIG_BT_MAX_CONN` / paired count in `cradio.conf`).
+- Bluetooth: up to five paired profiles (`CONFIG_BT_MAX_PAIRED=5` in `cradio.conf`).
 - Battery reporting for both halves (split central can show the peripheral’s level).
 - Idle timeout 30 s; **sleep** after one hour of inactivity.
 - **Soft off** is enabled in the build; wakeup is wired via GPIO in the keymap (no `&soft_off` binding in the current layer map—see `config/cradio.keymap` if you add one).
@@ -57,3 +61,7 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 
 - [Sweep (hardware)](https://github.com/davidphilipbarr/Sweep)
 - [Keymap I initially copied](https://www.youtube.com/watch?v=VShLPvF693k)
+- [ZMK Documentation](https://zmk.dev/docs)
+- [ZMK Keymaps & Behaviors](https://zmk.dev/docs/keymaps)
+- [nice!nano product page](https://nicekeyboards.com/nice-nano)
+- [devpew/swp — config this was built from](https://github.com/devpew/swp)
