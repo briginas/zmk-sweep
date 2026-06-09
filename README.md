@@ -2,7 +2,7 @@
 
 ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left` / `cradio_right`, built from [devpew/swp](https://github.com/devpew/swp). The keyboard name in firmware is `sweep split kbd`.
 
-**Build outputs:** `sweep_l`, `sweep_r`, and `reset` (Bluetooth pairing reset / clear). The left half build includes ZMK Studio (RPC over USB-UART).
+**CI artifacts:** `sweep_l.uf2` (left), `sweep_r.uf2` (right), `reset.uf2` (Bluetooth reset). The left half includes ZMK Studio over USB-UART.
 
 ## Quick start
 
@@ -12,17 +12,20 @@ ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left
 
 1. [Fork this repo](https://github.com/briginas/zmk-sweep/fork)
 2. (Optional) Edit `config/cradio.keymap` and `config/cradio.conf`.
-3. Wait for the GitHub Actions build to finish (the **Actions** tab on your fork), then download the artifact zip from that run and extract the UF2 (or other) files for your halves.
+3. Wait for the GitHub Actions build to finish (**Actions** tab on your fork), then download the **`firmware`** artifact and unzip it.
 4. Connect the half you are flashing with a USB cable.
 5. Enter the bootloader on that half:
    1. A **bootloader** key on **Symbols** or **Nav** (see below), if you can still type
    2. Double-click the reset button
    3. Quickly short the reset button twice (if the button is unreliable)
    4. Quickly short **GND** and **RST** on the controller twice (e.g. second and third pins on the corner row—check your board’s pinout)
-6. Copy the correct file to the bootloader drive:
-   - Names containing **`_l`** → left half
-   - **`sweep_r`** → right half
-   - **`reset`** → run on a half to clear Bluetooth state when pairing is stuck (not required for normal keymap or name changes)
+6. Copy the matching UF2 to the bootloader drive:
+
+   | File | Half |
+   | --- | --- |
+   | `sweep_l.uf2` | Left (central, Bluetooth host) |
+   | `sweep_r.uf2` | Right (peripheral) |
+   | `reset.uf2` | Either — clears Bluetooth pairings when pairing is stuck (not needed for normal keymap updates) |
 
 ### Firmware behavior (config)
 
@@ -46,10 +49,7 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 
 </div>
 
-*This diagram was created using draw.io*
-*Click <a href="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sweep-layout.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fbriginas%2Fzmk-sweep%2Fmain%2Fassets%2Fsweep-layout.drawio">HERE</a> to view a copy that you can edit*
-
-*This diagram mirrors the current `config/cradio.keymap`. Positions are aligned with full-size keyboard conventions wherever the 34-key split layout allows.*
+*Diagram mirrors `config/cradio.keymap`. [Editable draw.io copy](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sweep-layout.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fbriginas%2Fzmk-sweep%2Fmain%2Fassets%2Fsweep-layout.drawio).*
 
 | Layer       | How you get there                                      | Role                                                                                                                                               |
 | ----------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +61,7 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 ## References
 
 - [Sweep (hardware)](https://github.com/davidphilipbarr/Sweep)
-- [Keymap I initially copied](https://www.youtube.com/watch?v=VShLPvF693k)
+- [Source keymap walkthrough](https://www.youtube.com/watch?v=VShLPvF693k)
 - [ZMK Documentation](https://zmk.dev/docs)
 - [ZMK Keymaps & Behaviors](https://zmk.dev/docs/keymaps)
 - [nice!nano product page](https://nicekeyboards.com/nice-nano)
