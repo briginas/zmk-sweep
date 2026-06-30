@@ -2,7 +2,7 @@
 
 ZMK firmware for a **Sweep-style cradio** split: **nice!nano v2** + `cradio_left` / `cradio_right`, built from [devpew/swp](https://github.com/devpew/swp). The keyboard name in firmware is `sweep split kbd`.
 
-**CI artifacts:** `sweep_l.uf2` (left), `sweep_r.uf2` (right), `reset.uf2` (Bluetooth reset). The left half includes ZMK Studio over USB-UART.
+**CI artifacts:** `sweep_l.uf2` (left), `sweep_r.uf2` (right), `reset.uf2` (Bluetooth reset).
 
 ## Quick start
 
@@ -56,7 +56,7 @@ Home row mods use **balanced** hold-tap (`hml` / `hmr`) on the letters **A S D F
 | **Base**    | Default                                                | QWERTY; **left thumb** = hold **Symbols**; **right thumb** = hold **Nav**; thumbs share **Space** and **Enter** between them.                      |
 | **Symbols** | Hold **left thumb** from Base                          | Punctuation and symbols; **Tab**; **Bootloader** on the left block; right block includes **Backspace**; right thumb → **Adjust**.                  |
 | **Nav**     | Hold **right thumb** from Base                         | Numbers; arrows and navigation (with mods on the home row); **Bootloader**; **Adjust** via **left thumb** (`mo 3`).                                |
-| **Adjust**  | From **Symbols** (right thumb) or **Nav** (left thumb) | **F1–F12**; **BT_SEL 0** and **BT_CLR**; **studio_unlock**; volume and media keys.                                                                 |
+| **Adjust**  | From **Symbols** (right thumb) or **Nav** (left thumb) | **F1–F12**; **BT_SEL 0** and **BT_CLR**; volume and media keys.                                                                                    |
 
 ## References
 

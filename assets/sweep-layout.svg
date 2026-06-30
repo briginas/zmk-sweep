@@ -216,7 +216,7 @@
     <g transform="translate(132 177)"><use href="#key-normal"/><text class="key-text-small" x="24" y="21">F10</text></g>
     <g transform="translate(184 162)"><use href="#key-normal"/><text class="key-text-small" x="24" y="21">F11</text></g>
     <g transform="translate(236 177)"><use href="#key-normal"/><text class="key-text-small" x="24" y="21">F12</text></g>
-    <g transform="translate(288 185)"><use href="#key-layer-blue"/><text class="key-text-dark-small" x="24" y="17">Studio</text><text class="key-text-dark-small" x="24" y="29">Unlock</text></g>
+    <g transform="translate(288 185)"><use href="#key-empty"/></g>
     <g transform="translate(484 185)"><use href="#key-layer-blue"/><text class="key-text-dark-small" x="24" y="17">BT</text><text class="key-text-dark-small" x="24" y="29">0</text></g>
     <g transform="translate(536 177)"><use href="#key-special"/><text class="key-text-small" x="24" y="21">Prev</text></g>
     <g transform="translate(588 162)"><use href="#key-special"/><text class="key-text-small" x="24" y="21">Play</text></g>
