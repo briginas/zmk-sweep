@@ -168,10 +168,10 @@
     <g transform="translate(692 156)"><use href="#key-normal"/><text class="key-text-small" x="24" y="21">RSft</text></g>
 
     <g transform="translate(80 202)"><use href="#key-normal"/><text class="key-text" x="24" y="21">`</text></g>
-    <g transform="translate(132 177)"><use href="#key-empty"/><text class="key-text-small" x="24" y="21">TRNS</text></g>
-    <g transform="translate(184 162)"><use href="#key-empty"/><text class="key-text-small" x="24" y="21">TRNS</text></g>
+    <g transform="translate(132 177)"><use href="#key-empty"/></g>
+    <g transform="translate(184 162)"><use href="#key-empty"/></g>
     <g transform="translate(236 177)"><use href="#key-special"/><text class="key-text-small" x="24" y="21">Del</text></g>
-    <g transform="translate(288 185)"><use href="#key-empty"/><text class="key-text-small" x="24" y="21">TRNS</text></g>
+    <g transform="translate(288 185)"><use href="#key-empty"/></g>
     <g transform="translate(484 185)"><use href="#key-layer-blue"/><text class="key-text-dark-small" x="24" y="21">Boot</text></g>
     <g transform="translate(536 177)"><use href="#key-empty"/></g>
     <g transform="translate(588 162)"><use href="#key-empty"/></g>

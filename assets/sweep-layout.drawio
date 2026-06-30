@@ -313,16 +313,16 @@
         <mxCell id="104" value="`" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#383e47;strokeColor=#05070a;fontColor=#edf2f7;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="80.0" y="864.0" width="48" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="105" value="TRNS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="105" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="132.0" y="839.0" width="48" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="106" value="TRNS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="106" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="184.0" y="824.0" width="48" height="42" as="geometry" />
         </mxCell>
         <mxCell id="107" value="Del" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#495566;strokeColor=#121820;fontColor=#edf2f7;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="236.0" y="839.0" width="48" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="108" value="TRNS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="108" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#202833;strokeColor=#596170;dashed=1;dashPattern=4 4;fontColor=#edf2f7;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="288.0" y="847.0" width="48" height="42" as="geometry" />
         </mxCell>
         <mxCell id="109" value="Boot" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#5c8cca;strokeColor=#456893;fontColor=#111820;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
